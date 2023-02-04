@@ -189,6 +189,10 @@ h1, h2, h3, h4 , h5, h6 {
 	font-size: 16px;
 	text-transform: inherit;
 	border: none;
+	position: absolute;
+	top: 100%;
+	left: 33%;
+	z-index: 1;
 }
 
 .btn:hover {
@@ -552,7 +556,8 @@ h1, h2, h3, h4 , h5, h6 {
 
 .booking {
 	margin-top: 35px;
-	margin-bottom: 18px;
+	margin-bottom: 40px;
+	position: relative;
 }
 
 .booking div {
@@ -1111,6 +1116,10 @@ h1, h2, h3, h4 , h5, h6 {
 
 	.reviews__content {
 		padding: 0 15px;
+	}
+
+	.btn--reservations {
+		left: 24%;
 	}
 
 	.btn:first-child {

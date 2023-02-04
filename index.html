@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Yeseva+One&display=swap" rel="stylesheet">
 	<title>restaurant</title>
-	<script src="./assets/js/app.js"></script>
 </head>
 
 <body>
@@ -98,17 +97,20 @@
 						<span class="menu__meal--name">Savory Party Bread</span>
 						<span class="menu__meal--price">$3.99</span>
 					</div>
-					<div class="menu__text">It’s impossible to stop nibbling on warm pieces of this cheesy, oniony bread.</div>
+					<div class="menu__text">It’s impossible to stop nibbling on warm pieces of this cheesy, oniony
+						bread.</div>
 					<div class="menu__meal">
 						<span class="menu__meal--name">Fruit Charcuterie Board</span>
 						<span class="menu__meal--price">$5.50</span>
 					</div>
-					<div class="menu__text">Make this fruit charcuterie board a party go-to with any that are in season.</div>
+					<div class="menu__text">Make this fruit charcuterie board a party go-to with any that are in season.
+					</div>
 					<div class="menu__meal">
 						<span class="menu__meal--name">Hot Spinach Artichoke Dip</span>
 						<span class="menu__meal--price">$5.25</span>
 					</div>
-					<div class="menu__text">The savory blend of artichokes, spinach and Parmesan cheese is positively addictive!</div>
+					<div class="menu__text">The savory blend of artichokes, spinach and Parmesan cheese is positively
+						addictive!</div>
 				</div>
 
 				<div class="menu__item anim-items _anim-no-hide">
@@ -118,12 +120,14 @@
 						<span class="menu__meal--name">Orange-Glazed Meatballs</span>
 						<span class="menu__meal--price">$3.99</span>
 					</div>
-					<div class="menu__text">Sweet orange marmalade paired with the zip of a jalapeno in this sweet-sour glaze.</div>
+					<div class="menu__text">Sweet orange marmalade paired with the zip of a jalapeno in this sweet-sour
+						glaze.</div>
 					<div class="menu__meal">
 						<span class="menu__meal--name">Chicken Parmesan Slider Bake</span>
 						<span class="menu__meal--price">$20.50</span>
 					</div>
-					<div class="menu__text">Sliders are the perfect finger food for any get-together, and this flavorful chicken Parmesan version won’t disappoint.</div>
+					<div class="menu__text">Sliders are the perfect finger food for any get-together, and this flavorful
+						chicken Parmesan version won’t disappoint.</div>
 					<div class="menu__meal">
 						<span class="menu__meal--name">The Shirchoy</span>
 						<span class="menu__meal--price">$9.99</span>
@@ -138,19 +142,23 @@
 						<span class="menu__meal--name">Best Broccoli Salad</span>
 						<span class="menu__meal--price">$5.99</span>
 					</div>
-					<div class="menu__text">You won’t miss the bacon in this lightened-up take on classic broccoli salad.</div>
+					<div class="menu__text">You won’t miss the bacon in this lightened-up take on classic broccoli
+						salad.</div>
 					<div class="menu__special">
 						<div class="menu__meal menu__meal--special">
 							<span class="menu__meal--name">Shredded Brussels Sprout Salad</span>
 							<span class="menu__meal--price">$5.50</span>
 						</div>
-						<div class="menu__text">Made with just 7 ingredients, it’s a breeze to put together, but a bright lemon dressing, Parmesan cheese, pine nuts, and dried cranberries make it zippy, fresh, and satisfying.</div>
+						<div class="menu__text">Made with just 7 ingredients, it’s a breeze to put together, but a
+							bright lemon dressing, Parmesan cheese, pine nuts, and dried cranberries make it zippy,
+							fresh, and satisfying.</div>
 					</div>
 					<div class="menu__meal">
 						<span class="menu__meal--name">Rainbow Orzo Salad</span>
 						<span class="menu__meal--price">$5.25</span>
 					</div>
-					<div class="menu__text">Diced mango adds a surprising sweet twist to this colorful orzo, red onion, bell pepper, herb, and cucumber salad.</div>
+					<div class="menu__text">Diced mango adds a surprising sweet twist to this colorful orzo, red onion,
+						bell pepper, herb, and cucumber salad.</div>
 				</div>
 
 				<div class="menu__item anim-items _anim-no-hide">
@@ -166,7 +174,8 @@
 							<span class="menu__meal--name">Pretzel Bread Bowl with Cheese Dip</span>
 							<span class="menu__meal--price">$34.50</span>
 						</div>
-						<div class="menu__text">People couldn’t believe that this delicious bread had pretzels in the mix! For variety, try using different flavors of pretzels</div>
+						<div class="menu__text">People couldn’t believe that this delicious bread had pretzels in the
+							mix! For variety, try using different flavors of pretzels</div>
 					</div>
 					<div class="menu__meal">
 						<span class="menu__meal--name">Turkey Sliders with Sesame Slaw</span>
@@ -216,22 +225,22 @@
 						<p>Delicious Lambda cakes, muffins, and gourmet coffees make us hard
 							to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
 					</div>
-					<form class="booking clearfix" action="/" method="post">
-						<div>
+					<form id="form" class="booking clearfix" action="/" method="post">
+						<div class="booking__group">
 							<label for="name">Name</label><br>
-							<input class="booking__input" id="name" type="text" name="name"
+							<input class="booking__input" id="name" type="text" name="name" required
 								placeholder="your name *"><br>
 							<label for="email">Email</label><br>
-							<input class="booking__input" id="email" type="email" name="email"
+							<input class="booking__input" id="email" type="email" name="email" required
 								placeholder="your email *">
 						</div>
-						<div>
+						<div class="booking__group">
 							<label for="date">Date</label><br>
-							<input class="booking__input" id="date" type="date" name="date" placeholder="date *"
+							<input class="booking__input" id="date" type="date" name="date" placeholder="date *" required 	 	
 								value="" min="2021-03-30" max="2030-12-30"
 								onChange="this.setAttribute('value', this.value)"><br>
 							<label for="partyNumber">Party number</label><br>
-							<select class="booking__select" name="booking__select" id="partyNumber" required>
+							<select class="booking__select" name="party-number" id="partyNumber" required>
 								<option value="" disabled selected hidden>party number</option>
 								<option>1</option>
 								<option>2</option>
@@ -241,8 +250,8 @@
 								<option>6</option>
 							</select>
 						</div>
+						<button class="btn btn--reservations" type="submit">Book now</button>
 					</form>
-					<button class="btn btn--reservations" type="submit">Book now</button>
 				</div>
 			</div>
 		</div>
@@ -306,6 +315,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="./assets/js/app.js"></script>
 </body>
 
 </html>
